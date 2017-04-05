@@ -62,3 +62,15 @@ CREATE TABLE visits (
 );
 ALTER TABLE visits ADD CONSTRAINT fk_visits_pets FOREIGN KEY (pet_id) REFERENCES pets (id);
 CREATE INDEX visits_pet_id ON visits (pet_id);
+
+create view users(username, password, enabled) as
+select first_name, first_name, true from owners
+union
+select first_name, first_name, true from vets;
+
+create table authorities (
+username varchar_ignorecase(50) not null,
+authority varchar_ignorecase(50) not null
+);
+create unique index ix_auth_username on authorities (username,authority);
+

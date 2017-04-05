@@ -22,10 +22,10 @@ INSERT INTO types VALUES (4, 'snake');
 INSERT INTO types VALUES (5, 'bird');
 INSERT INTO types VALUES (6, 'hamster');
 
-INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023');
-INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749');
+INSERT INTO owners VALUES (1, 'Bill', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023');
+INSERT INTO owners VALUES (2, 'Samantha', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749');
 INSERT INTO owners VALUES (3, 'Eduardo', 'Rodriquez', '2693 Commerce St.', 'McFarland', '6085558763');
-INSERT INTO owners VALUES (4, 'Harold', 'Davis', '563 Friendly St.', 'Windsor', '6085553198');
+INSERT INTO owners VALUES (4, 'Stephen', 'Davis', '563 Friendly St.', 'Windsor', '6085553198');
 INSERT INTO owners VALUES (5, 'Peter', 'McTavish', '2387 S. Fair Way', 'Madison', '6085552765');
 INSERT INTO owners VALUES (6, 'Jean', 'Coleman', '105 N. Lake St.', 'Monona', '6085552654');
 INSERT INTO owners VALUES (7, 'Jeff', 'Black', '1450 Oak Blvd.', 'Monona', '6085555387');
@@ -51,3 +51,10 @@ INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
+
+INSERT INTO authorities(username, authority) VALUES ('Bill', 'ROLE_USER');
+INSERT INTO authorities(username, authority) VALUES ('Stephen', 'ROLE_EDIT');
+INSERT INTO authorities(username, authority) VALUES ('Stephen', 'ROLE_USER');
+INSERT INTO authorities(username, authority) VALUES ('Samantha', 'ROLE_ADD');
+INSERT INTO authorities(username, authority) VALUES ('Samantha', 'ROLE_EDIT');
+INSERT INTO authorities(username, authority) VALUES ('Samantha', 'ROLE_USER');
